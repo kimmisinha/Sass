@@ -1,12 +1,19 @@
+$color1: rgb(3, 46, 61);
+$color2: rgb(3, 46, 17);
+$color3: rgb(3, 76, 6);
+$color4:rgb(222, 185, 37),rgb(205, 115, 37) ;
+
+
 body {
-    margin: 0;
-  
-    h1 {
-      font-size: 2rem;
-    }
-  
-    a {
-      text-decoration: double;
-    }
+  margin: 0;
+  color: $color3;
+  background-color: nth($color4,2 );
+
+  h1 {
+    font-size: 2rem;
   }
-  
+
+  a {
+    text-decoration: double;
+  }
+}
