@@ -7,7 +7,10 @@ function App() {
     <>
    <div className="productcard">
     <h2>sample</h2>
-    <a href="/hi">sample link</a>
+    <button>button click !</button>
+    <p className="p1">Click me</p>
+    <p className="p2">Click me</p>
+    <p className="p3">Click me</p>
    </div>
     </>
   );

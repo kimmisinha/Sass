@@ -28,3 +28,23 @@ body {
       color: pink;
     }
   }
+
+
+  @mixin customFun($color){
+    background-color:aqua;
+    padding: 10px;
+    border: rebeccapurple;
+    cursor: pointer;
+  }
+  .p1 {
+    @include customFun(color.$color1);
+  }
+  
+  .p2 {
+    @include customFun(color2.$color2); 
+  }
+  
+  .p3 {
+    @include customFun(color.$color3);
+  }
+  

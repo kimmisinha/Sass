@@ -22,4 +22,25 @@ body a {
 }
 .productcard > h2 {
   color: pink;
+}
+
+.p1 {
+  background-color: aqua;
+  padding: 10px;
+  border: rebeccapurple;
+  cursor: pointer;
+}
+
+.p2 {
+  background-color: aqua;
+  padding: 10px;
+  border: rebeccapurple;
+  cursor: pointer;
+}
+
+.p3 {
+  background-color: aqua;
+  padding: 10px;
+  border: rebeccapurple;
+  cursor: pointer;
 }/*# sourceMappingURL=app.css.map */
