@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+}
+body h1 {
+  font-size: 2rem;
+}
+body a {
+  -webkit-text-decoration: double;
+          text-decoration: double;
+}/*# sourceMappingURL=app.css.map */
