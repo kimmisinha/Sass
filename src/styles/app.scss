@@ -1,9 +1,5 @@
-$color1: rgb(3, 46, 61);
-$color2: rgb(3, 46, 17);
-$color3: rgb(3, 76, 6);
-$color4:rgb(222, 185, 37),rgb(205, 115, 37) ;
-
-
+@import "_colors2.scss";
+@import "_colors.scss";
 body {
   margin: 0;
   color: $color3;
@@ -17,3 +13,16 @@ body {
     text-decoration: double;
   }
 }
+.productcard {
+    max-width: min-content;
+    background-color: $color2; 
+    padding: 1rem; 
+  
+    a {
+      color: $color1; 
+    }
+  
+    > h2 {
+      color: pink;
+    }
+  }

@@ -5,7 +5,10 @@ import "./styles/app.scss";
 function App() {
   return (
     <>
-      <h3>sample</h3>
+   <div className="productcard">
+    <h2>sample</h2>
+    <a href="/hi">sample link</a>
+   </div>
     </>
   );
 }

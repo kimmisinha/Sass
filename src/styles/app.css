@@ -9,4 +9,17 @@ body h1 {
 body a {
   -webkit-text-decoration: double;
           text-decoration: double;
+}
+
+.productcard {
+  max-width: -moz-min-content;
+  max-width: min-content;
+  background-color: rgb(3, 46, 17);
+  padding: 1rem;
+}
+.productcard a {
+  color: rgb(3, 46, 61);
+}
+.productcard > h2 {
+  color: pink;
 }/*# sourceMappingURL=app.css.map */
