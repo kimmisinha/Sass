@@ -1,10 +1,12 @@
-@import "_colors2.scss";
-@import "_colors.scss";
+// @import "_colors2.scss";
+// @import "_colors.scss";
+@use "_colors" as color;
+@use "_colors2" as color2;
+
 body {
   margin: 0;
-  color: $color3;
-  background-color: nth($color4,2 );
-
+  color: color.$color3;
+  background-color: color2.$color4;
   h1 {
     font-size: 2rem;
   }
@@ -15,11 +17,11 @@ body {
 }
 .productcard {
     max-width: min-content;
-    background-color: $color2; 
+    background-color: color.$color2; 
     padding: 1rem; 
   
     a {
-      color: $color1; 
+      color: color.$color1; 
     }
   
     > h2 {

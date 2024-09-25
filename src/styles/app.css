@@ -1,7 +1,7 @@
 body {
   margin: 0;
   color: rgb(3, 76, 6);
-  background-color: rgb(205, 115, 37);
+  background-color: rgb(222, 185, 37), rgb(205, 115, 37);
 }
 body h1 {
   font-size: 2rem;
