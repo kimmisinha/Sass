@@ -14,7 +14,6 @@ body a {
 .productcard {
   max-width: -moz-min-content;
   max-width: min-content;
-  background-color: rgb(3, 46, 17);
   padding: 1rem;
 }
 .productcard a {
@@ -70,7 +69,7 @@ body a {
 }
 
 .string {
-  content: uh481ce;
+  content: uh481cl;
 }
 
 .string {
@@ -110,7 +109,7 @@ body a {
 }
 
 .Numeric {
-  content: 0.9149415301;
+  content: 0.659099588;
 }
 
 .Numeric {
