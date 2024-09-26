@@ -43,4 +43,36 @@ body a {
   padding: 10px;
   border: rebeccapurple;
   cursor: pointer;
+}
+
+.quoted-text {
+  content: "Hello";
+}
+
+.quoted-text {
+  content: 1;
+}
+
+.quoted-text {
+  content: "Hello wonderful world!";
+}
+
+.quoted-text {
+  content: 12;
+}
+
+.quoted-text {
+  content: "ello";
+}
+
+.quoted-text {
+  content: "hello world!";
+}
+
+.quoted-text {
+  content: uh47z1t;
+}
+
+.quoted-text {
+  content: Hello world!;
 }/*# sourceMappingURL=app.css.map */

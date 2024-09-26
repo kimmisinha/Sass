@@ -16,35 +16,60 @@ body {
   }
 }
 .productcard {
-    max-width: min-content;
-    background-color: color.$color2; 
-    padding: 1rem; 
-  
-    a {
-      color: color.$color1; 
-    }
-  
-    > h2 {
-      color: pink;
-    }
+  max-width: min-content;
+  background-color: color.$color2;
+  padding: 1rem;
+
+  a {
+    color: color.$color1;
   }
 
+  > h2 {
+    color: pink;
+  }
+}
 
-  @mixin customFun($color){
-    background-color:aqua;
-    padding: 10px;
-    border: rebeccapurple;
-    cursor: pointer;
-  }
-  .p1 {
-    @include customFun(color.$color1);
-  }
-  
-  .p2 {
-    @include customFun(color2.$color2); 
-  }
-  
-  .p3 {
-    @include customFun(color.$color3);
-  }
-  
+@mixin customFun($color) {
+  background-color: aqua;
+  padding: 10px;
+  border: rebeccapurple;
+  cursor: pointer;
+}
+.p1 {
+  @include customFun(color.$color1);
+}
+
+.p2 {
+  @include customFun(color2.$color2);
+}
+
+.p3 {
+  @include customFun(color.$color3);
+}
+
+.quoted-text {
+  content: quote("Hello");
+}
+
+.quoted-text {
+  content: str-index("Hello world!", "H");
+}
+
+.quoted-text {
+  content: str-insert("Hello world!", " wonderful", 6);
+}
+.quoted-text {
+  content: str-length("Hello world!");
+}
+.quoted-text {
+  content: str-slice("Hello world!", 2, 5);
+}
+.quoted-text {
+  content: to-lower-case("Hello World!");
+}
+.quoted-text {
+  content: unique-id();
+}
+.quoted-text {
+  content: unquote("Hello world!");
+}
