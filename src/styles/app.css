@@ -70,7 +70,7 @@ body a {
 }
 
 .string {
-  content: uh480vy;
+  content: uh481ce;
 }
 
 .string {
@@ -110,11 +110,11 @@ body a {
 }
 
 .Numeric {
-  content: 0.327744995;
+  content: 0.9149415301;
 }
 
 .Numeric {
-  content: 3;
+  content: 2;
 }
 
 .Numeric {
@@ -199,4 +199,28 @@ body a {
 
 .Map {
   content: 12px, 18px, 24px;
+}
+
+div.myInput {
+  width: 20px;
+}
+
+ul li {
+  width: 20px;
+}
+
+h1 .myInput .warning {
+  width: 20px;
+}
+
+div.warning {
+  width: 20px;
+}
+
+.myInput.disabled {
+  width: 20px;
+}
+
+div, .myInput {
+  width: 20px;
 }/*# sourceMappingURL=app.css.map */

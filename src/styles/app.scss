@@ -177,4 +177,42 @@ $modified-font-sizes: map-remove(color.$font-sizes, "small");
   content: map-values(color.$font-sizes)
 
 }
-  
+$selector: is-superselector("div", "h2");
+
+@if $selector {
+  div {
+    width: 30px;
+  }
+}
+
+$selector: selector-append("div", ".myInput");
+#{$selector} {
+  width: 20px;
+}
+
+$selector:selector-nest("ul", "li");
+#{$selector} {
+  width: 20px;
+}
+$selector:selector-parse("h1 .myInput .warning");
+#{$selector} {
+  width: 20px;
+}
+$selector:selector-replace("p.warning", "p", "div");
+#{$selector} {
+  width: 20px;
+}
+$selector: selector-unify(".myInput", ".disabled");
+
+@if $selector {
+  #{$selector} {
+    width: 20px;
+  }
+}
+$selector: simple-selectors("div.myInput");
+
+@if $selector {
+  #{$selector} {
+    width: 20px;
+  }
+}
