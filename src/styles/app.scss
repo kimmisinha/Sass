@@ -111,3 +111,43 @@ body {
 .quoted-text {
   content: round(15.2);
 }
+
+.quoted-text {
+  content: append((a b c), d);
+}
+
+.quoted-text {
+  content: index(a b c, b);
+}
+
+.quoted-text {
+  content: is-bracketed([a b c]);
+}
+.quoted-text {
+  content: is-bracketed(a b c);
+}
+
+.quoted-text {
+  content: join(a b c, d e f);
+}
+.quoted-text {
+  content: join(a b c, d e f, $bracketed: true);
+}
+
+.quoted-text {
+  content: length(a b c);
+}
+.quoted-text {
+  content: list-separator(a b c);
+}
+
+.quoted-text {
+  content: nth(a b c, 3);
+}
+.quoted-text {
+  content: set-nth(a b c, 2, x);
+}
+
+.quoted-text {
+  content: zip(1px 2px 3px, solid dashed dotted, red green blue);
+}

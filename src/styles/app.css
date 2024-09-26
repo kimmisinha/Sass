@@ -70,7 +70,7 @@ body a {
 }
 
 .quoted-text {
-  content: uh47zdp;
+  content: uh47zoh;
 }
 
 .quoted-text {
@@ -110,7 +110,39 @@ body a {
 }
 
 .quoted-text {
-  content: 0.2779744902;
+  content: 0.0885869567;
+}
+
+.quoted-text {
+  content: 6;
+}
+
+.quoted-text {
+  content: 15;
+}
+
+.quoted-text {
+  content: a b c d;
+}
+
+.quoted-text {
+  content: 2;
+}
+
+.quoted-text {
+  content: true;
+}
+
+.quoted-text {
+  content: false;
+}
+
+.quoted-text {
+  content: a b c d e f;
+}
+
+.quoted-text {
+  content: [a b c d e f];
 }
 
 .quoted-text {
@@ -118,5 +150,17 @@ body a {
 }
 
 .quoted-text {
-  content: 15;
+  content: space;
+}
+
+.quoted-text {
+  content: c;
+}
+
+.quoted-text {
+  content: a x c;
+}
+
+.quoted-text {
+  content: 1px solid red, 2px dashed green, 3px dotted blue;
 }/*# sourceMappingURL=app.css.map */
