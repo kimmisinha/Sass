@@ -45,122 +45,158 @@ body a {
   cursor: pointer;
 }
 
-.quoted-text {
+.string {
   content: "Hello";
 }
 
-.quoted-text {
+.string {
   content: 1;
 }
 
-.quoted-text {
+.string {
   content: "Hello wonderful world!";
 }
 
-.quoted-text {
+.string {
   content: 12;
 }
 
-.quoted-text {
+.string {
   content: "ello";
 }
 
-.quoted-text {
+.string {
   content: "hello world!";
 }
 
-.quoted-text {
-  content: uh47zoh;
+.string {
+  content: uh480vy;
 }
 
-.quoted-text {
+.string {
   content: Hello world!;
 }
 
-.quoted-text {
+.Numeric {
   content: 15;
 }
 
-.quoted-text {
+.Numeric {
   content: 16;
 }
 
-.quoted-text {
+.Numeric {
   content: acomparable(15px, 10px);
 }
 
-.quoted-text {
+.Numeric {
   content: false;
 }
 
-.quoted-text {
+.Numeric {
   content: 15;
 }
 
-.quoted-text {
+.Numeric {
   content: 9;
 }
 
-.quoted-text {
+.Numeric {
   content: -7;
 }
 
-.quoted-text {
+.Numeric {
   content: 120%;
 }
 
-.quoted-text {
-  content: 0.0885869567;
+.Numeric {
+  content: 0.327744995;
 }
 
-.quoted-text {
-  content: 6;
-}
-
-.quoted-text {
-  content: 15;
-}
-
-.quoted-text {
-  content: a b c d;
-}
-
-.quoted-text {
-  content: 2;
-}
-
-.quoted-text {
-  content: true;
-}
-
-.quoted-text {
-  content: false;
-}
-
-.quoted-text {
-  content: a b c d e f;
-}
-
-.quoted-text {
-  content: [a b c d e f];
-}
-
-.quoted-text {
+.Numeric {
   content: 3;
 }
 
-.quoted-text {
+.Numeric {
+  content: 15;
+}
+
+.List {
+  content: a b c d;
+}
+
+.List {
+  content: 2;
+}
+
+.List {
+  content: true;
+}
+
+.List {
+  content: false;
+}
+
+.List {
+  content: a b c d e f;
+}
+
+.List {
+  content: [a b c d e f];
+}
+
+.List {
+  content: 3;
+}
+
+.List {
   content: space;
 }
 
-.quoted-text {
+.List {
   content: c;
 }
 
-.quoted-text {
+.List {
   content: a x c;
 }
 
-.quoted-text {
+.List {
   content: 1px solid red, 2px dashed green, 3px dotted blue;
+}
+
+.Map {
+  content: 12px;
+}
+
+.Map {
+  content: false;
+}
+
+.Map {
+  content: "small", "normal", "large";
+}
+
+.font-small {
+  font-size: 12px;
+}
+
+.font-normal {
+  font-size: 18px;
+}
+
+.font-large {
+  font-size: 24px;
+}
+
+.font-x-large {
+  font-size: 30px;
+}
+
+.font-xx-large {
+  font-size: 36px;
+}
+
+.Map {
+  content: 12px, 18px, 24px;
 }/*# sourceMappingURL=app.css.map */

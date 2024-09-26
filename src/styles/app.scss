@@ -47,107 +47,134 @@ body {
   @include customFun(color.$color3);
 }
 
-.quoted-text {
+.string {
   content: quote("Hello");
 }
 
-.quoted-text {
+.string {
   content: str-index("Hello world!", "H");
 }
 
-.quoted-text {
+.string {
   content: str-insert("Hello world!", " wonderful", 6);
 }
-.quoted-text {
+.string {
   content: str-length("Hello world!");
 }
-.quoted-text {
+.string {
   content: str-slice("Hello world!", 2, 5);
 }
-.quoted-text {
+.string {
   content: to-lower-case("Hello World!");
 }
-.quoted-text {
+.string {
   content: unique-id();
 }
-.quoted-text {
+.string {
   content: unquote("Hello world!");
 }
 
-.quoted-text {
+.Numeric {
   content: abs(-15);
 }
 
-.quoted-text {
+.Numeric {
   content: ceil(15.2);
 }
-.quoted-text {
+.Numeric {
   content: acomparable(15px, 10px);
 }
-.quoted-text {
+.Numeric {
   content: comparable(35px, 2em);
 }
 
-.quoted-text {
+.Numeric {
   content: floor(15.8);
 }
-.quoted-text {
+.Numeric {
   content: max(5, 7, 9, 0, -3, -7);
 }
-.quoted-text {
+.Numeric {
   content: min(5, 7, 9, 0, -3, -7);
 }
 
-.quoted-text {
+.Numeric {
   content: percentage(1.2);
 }
-.quoted-text {
+.Numeric {
   content: random();
 }
-.quoted-text {
+.Numeric {
   content: random(6);
 }
 
-.quoted-text {
+.Numeric {
   content: round(15.2);
 }
 
-.quoted-text {
+.List {
   content: append((a b c), d);
 }
 
-.quoted-text {
+.List {
   content: index(a b c, b);
 }
 
-.quoted-text {
+.List {
   content: is-bracketed([a b c]);
 }
-.quoted-text {
+.List {
   content: is-bracketed(a b c);
 }
 
-.quoted-text {
+.List {
   content: join(a b c, d e f);
 }
-.quoted-text {
+.List {
   content: join(a b c, d e f, $bracketed: true);
 }
 
-.quoted-text {
+.List {
   content: length(a b c);
 }
-.quoted-text {
+.List {
   content: list-separator(a b c);
 }
 
-.quoted-text {
+.List {
   content: nth(a b c, 3);
 }
-.quoted-text {
+.List {
   content: set-nth(a b c, 2, x);
 }
 
-.quoted-text {
+.List {
   content: zip(1px 2px 3px, solid dashed dotted, red green blue);
 }
+.Map {
+  content: map-get(color.$font-sizes, "small")
+}
+
+.Map {
+  content: map-has-key(color.$font-sizes, "big")
+}
+  
+
+.Map {
+  content: map-keys(color.$font-sizes)
+}
+
+$merged-font-sizes: map-merge(color.$font-sizes, color.$font-sizes2);
+
+@each $size, $value in $merged-font-sizes {
+  .font-#{$size} {
+    font-size: $value;
+  }
+}
+$modified-font-sizes: map-remove(color.$font-sizes, "small");
+
+.Map {
+  content: map-values(color.$font-sizes)
+
+}
+  

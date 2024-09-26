@@ -13,7 +13,10 @@ function App() {
         <p className="p3">Click me</p>
       </div>
       <div>
-        <p className="quoted-text">Hi</p>
+        <p className="string">string</p>
+        <p className="Numeric">Numeric</p>
+        <p className="List">List</p>
+        <p className="Map">Map</p>
       </div>
     </>
   );
