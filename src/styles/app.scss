@@ -73,3 +73,41 @@ body {
 .quoted-text {
   content: unquote("Hello world!");
 }
+
+.quoted-text {
+  content: abs(-15);
+}
+
+.quoted-text {
+  content: ceil(15.2);
+}
+.quoted-text {
+  content: acomparable(15px, 10px);
+}
+.quoted-text {
+  content: comparable(35px, 2em);
+}
+
+.quoted-text {
+  content: floor(15.8);
+}
+.quoted-text {
+  content: max(5, 7, 9, 0, -3, -7);
+}
+.quoted-text {
+  content: min(5, 7, 9, 0, -3, -7);
+}
+
+.quoted-text {
+  content: percentage(1.2);
+}
+.quoted-text {
+  content: random();
+}
+.quoted-text {
+  content: random(6);
+}
+
+.quoted-text {
+  content: round(15.2);
+}

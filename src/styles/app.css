@@ -70,9 +70,53 @@ body a {
 }
 
 .quoted-text {
-  content: uh47z1t;
+  content: uh47zdp;
 }
 
 .quoted-text {
   content: Hello world!;
+}
+
+.quoted-text {
+  content: 15;
+}
+
+.quoted-text {
+  content: 16;
+}
+
+.quoted-text {
+  content: acomparable(15px, 10px);
+}
+
+.quoted-text {
+  content: false;
+}
+
+.quoted-text {
+  content: 15;
+}
+
+.quoted-text {
+  content: 9;
+}
+
+.quoted-text {
+  content: -7;
+}
+
+.quoted-text {
+  content: 120%;
+}
+
+.quoted-text {
+  content: 0.2779744902;
+}
+
+.quoted-text {
+  content: 3;
+}
+
+.quoted-text {
+  content: 15;
 }/*# sourceMappingURL=app.css.map */
