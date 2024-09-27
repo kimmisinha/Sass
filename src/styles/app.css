@@ -69,7 +69,7 @@ body a {
 }
 
 .string {
-  content: uh481pc;
+  content: uh482c8;
 }
 
 .string {
@@ -109,11 +109,11 @@ body a {
 }
 
 .Numeric {
-  content: 0.8738566716;
+  content: 0.4553577384;
 }
 
 .Numeric {
-  content: 3;
+  content: 6;
 }
 
 .Numeric {
@@ -235,8 +235,20 @@ div, .myInput {
   padding: false;
   padding: true;
   padding: string;
-  padding: 10px;
-  padding: "px";
-  padding: false;
-  padding: false;
+}
+
+#first,
+#second {
+  width: 400px;
+  height: 100px;
+  margin-bottom: 20px;
+  border: 1px solid #000;
+}
+
+#first {
+  background: #ff8800;
+}
+
+#second {
+  background: black;
 }/*# sourceMappingURL=app.css.map */

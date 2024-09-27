@@ -18,6 +18,8 @@ function App() {
         <p className="List">List</p>
         <p className="Map">Map</p>
       </div>
+      <div id="first"></div>
+      <div id="second"></div>
     </>
   );
 }

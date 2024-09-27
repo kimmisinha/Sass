@@ -3,7 +3,6 @@
 @use "_colors" as color;
 @use "_colors2" as color2;
 
-
 body {
   margin: 0;
   color: color.$color3;
@@ -152,16 +151,15 @@ body {
   content: zip(1px 2px 3px, solid dashed dotted, red green blue);
 }
 .Map {
-  content: map-get(color.$font-sizes, "small")
+  content: map-get(color.$font-sizes, "small");
 }
 
 .Map {
-  content: map-has-key(color.$font-sizes, "big")
+  content: map-has-key(color.$font-sizes, "big");
 }
-  
 
 .Map {
-  content: map-keys(color.$font-sizes)
+  content: map-keys(color.$font-sizes);
 }
 
 $merged-font-sizes: map-merge(color.$font-sizes, color.$font-sizes2);
@@ -174,8 +172,7 @@ $merged-font-sizes: map-merge(color.$font-sizes, color.$font-sizes2);
 $modified-font-sizes: map-remove(color.$font-sizes, "small");
 
 .Map {
-  content: map-values(color.$font-sizes)
-
+  content: map-values(color.$font-sizes);
 }
 $selector: is-superselector("div", "h2");
 
@@ -190,15 +187,15 @@ $selector: selector-append("div", ".myInput");
   width: 20px;
 }
 
-$selector:selector-nest("ul", "li");
+$selector: selector-nest("ul", "li");
 #{$selector} {
   width: 20px;
 }
-$selector:selector-parse("h1 .myInput .warning");
+$selector: selector-parse("h1 .myInput .warning");
 #{$selector} {
   width: 20px;
 }
-$selector:selector-replace("p.warning", "p", "div");
+$selector: selector-replace("p.warning", "p", "div");
 #{$selector} {
   width: 20px;
 }
@@ -217,22 +214,24 @@ $selector: simple-selectors("div.myInput");
   }
 }
 
-
 $num: 10px;
 $char: "Arial";
 $list: 10px 20px 30px;
-$map: ("regular" : 400, "medium" : 500);
+$map: (
+  "regular": 400,
+  "medium": 500,
+);
+$basecolor: pink;
 
-@mixin border-radius{
+@mixin border-radius {
   border-radius: 5px;
 }
 
-@function add($a, $b){
-
+@function add($a, $b) {
   @return $a + $b;
 }
 
-.test{
+.test {
   padding: variable-exists(num);
   padding: variable-exists(list);
   padding: variable-exists(listing);
@@ -247,11 +246,56 @@ $map: ("regular" : 400, "medium" : 500);
   padding: function-exists(add);
 
   padding: type-of($char);
-  
-  padding: inspect($num);
-  padding: unit($num);
-  padding: unitless($num);
-  padding: variable-exists($num);
 
+  // padding: inspect($num);
+  // padding: unit($num);
+  // padding: unitless($num);
+  // padding: variable-exists($num);
+}
 
+$base-color: #ff8800;
+
+#first,
+#second {
+  width: 400px;
+  height: 100px;
+  margin-bottom: 20px;
+  border: 1px solid #000;
+}
+
+#first {
+  background: $base-color;
+}
+
+#second {
+  background: darken($base-color, 70);
+
+  // background: lighten($base-color, 60);
+
+  // background: adjust-hue($base-color, 80);
+
+  // background: saturate($base-color, 90);
+
+  // background: desaturate($base-color, 30);
+  // background: desaturate($base-color, 0);
+  // background: desaturate($base-color, 100);
+
+  // background: mix($base-color, red, 50);
+  // background: mix($base-color, yellow, 50);
+
+  // background: transparentize($base-color, 0.1);
+
+  // background: red($base-color);
+
+  // background: green($base-color);
+
+  // background: blue($base-color);
+
+  // background: hue($base-color);
+
+  // background: saturation($base-color);
+
+  // background: lightness($base-color);
+
+  // background: alpha($base-color);
 }
