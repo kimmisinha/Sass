@@ -3,6 +3,7 @@
 @use "_colors" as color;
 @use "_colors2" as color2;
 
+
 body {
   margin: 0;
   color: color.$color3;
@@ -214,4 +215,43 @@ $selector: simple-selectors("div.myInput");
   #{$selector} {
     width: 20px;
   }
+}
+
+
+$num: 10px;
+$char: "Arial";
+$list: 10px 20px 30px;
+$map: ("regular" : 400, "medium" : 500);
+
+@mixin border-radius{
+  border-radius: 5px;
+}
+
+@function add($a, $b){
+
+  @return $a + $b;
+}
+
+.test{
+  padding: variable-exists(num);
+  padding: variable-exists(list);
+  padding: variable-exists(listing);
+
+  padding: global-variable-exists(num);
+  padding: global-variable-exists(char);
+
+  padding: mixin-exists(char);
+  padding: mixin-exists(border-radius);
+
+  padding: function-exists(border-radius);
+  padding: function-exists(add);
+
+  padding: type-of($char);
+  
+  padding: inspect($num);
+  padding: unit($num);
+  padding: unitless($num);
+  padding: variable-exists($num);
+
+
 }
